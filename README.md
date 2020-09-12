@@ -75,3 +75,49 @@
   - 上盖
   - 底座
 - 平衡杆 Stabilizer
+
+### :triangular_flag_on_post: 主控板待实现数显内容
+
+- CPU (型号读出)
+  - USAGE
+  - POWER
+  - CLOCK
+
+- GPU (型号读出)
+  - USAGE
+  - POWER
+  - CLOCK
+  - GRAM
+
+- RAM (依情况，型号读出)
+  - ULTILIZATION (通过进度条+数字表示内存占用)
+  - USED MEM
+  - FREE MEM
+  - CLOCK
+
+- TEMPERATURE
+  - CPU PACKAGE
+  - MB VRM (主板供电模块)
+  - GPU CORE
+  - GPU VRM (显卡供电模块)
+  - RAM
+  - PCH (南桥芯片温度)
+  - WATER-IN (水冷系统入水口测温堵头温度)
+  - WATER-OUT (水冷系统出水口测温堵头温度)
+
+- MOTHERBOARD SENSOR (主板型号读出)
+  - FLOW RATE (水冷系统流速表流速)
+  - WATER PUMP (水冷系统水泵转速)
+
+- FAN
+  - CPU FAN (CPU风扇)
+  - GPU FAN
+  - CHASSIS FAN (机箱风扇)
+
+- STORAGE (可检测硬盘读写速度，不准备加入)
+
+- NETWORK
+  - TOTAL DL
+  - TOTAL UP
+  - DL RATE
+  - UP RATE
