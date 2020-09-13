@@ -78,46 +78,62 @@
 
 ### :triangular_flag_on_post: 主控板待实现数显内容
 
-- CPU (型号读出)
-  - USAGE
+- CPU - I9 9900KS (型号读出)
+  - LOAD
   - POWER
   - CLOCK
+  - CORE TEMP (所有核心当中温度最高的核心的温度值)
+  - PACKAGE TEMP (表面温度)
+  - VCORE (核心电压 V)
 
-- GPU (型号读出)
-  - USAGE
+- GPU - RTX 2080 SUPER (型号读出)
+  - LOAD
+    - CORE
+    - MEM CTRL
+    - VIDEO ENGINE
+    - MEM
+    - BUS
   - POWER
   - CLOCK
+    - CORE
+    - MEM
+  - CORE TEMP (显卡核心温度)
+  - `HWiNFO64` VRM TEMP (显卡供电模块)
   - GRAM
+    - USED
+    - FREE
 
 - RAM (依情况，型号读出)
-  - ULTILIZATION (通过进度条+数字表示内存占用)
+  - LOAD (通过进度条+数字表示内存占用)
   - USED MEM
   - FREE MEM
-  - CLOCK
-
-- TEMPERATURE
-  - CPU PACKAGE
-  - MB VRM (主板供电模块)
-  - GPU CORE
-  - GPU VRM (显卡供电模块)
-  - RAM
-  - PCH (南桥芯片温度)
-  - WATER-IN (水冷系统入水口测温堵头温度)
-  - WATER-OUT (水冷系统出水口测温堵头温度)
+  - `HWiNFO64` CLOCK
+  - `HWiNFO64` TEMP
 
 - MOTHERBOARD SENSOR (主板型号读出)
-  - FLOW RATE (水冷系统流速表流速)
   - WATER PUMP (水冷系统水泵转速)
+  - MB TEMP (主板温度)
+  - `HWiNFO64` FLOW RATE (水冷系统流速表流速)
+  - `HWiNFO64` MB VRM TEMP (主板供电模块温度)
+  - `HWiNFO64` PCH TEMP (南桥芯片温度)
+  - `HWiNFO64` WATER-IN TEMP (水冷系统入水口测温堵头温度)
+  - `HWiNFO64` WATER-OUT TEMP (水冷系统出水口测温堵头温度)
 
 - FAN
   - CPU FAN (CPU风扇)
-  - GPU FAN
+  - GPU FAN (GPU风扇 %)
   - CHASSIS FAN (机箱风扇)
 
-- STORAGE (可检测硬盘读写速度，不准备加入)
+- STORAGE (硬盘，表格显示)
+  - TOTAL ACTIVITY (活动时间 %)
+  - USED SPACE (已用空间 %)
+  - READ RATE (读取速度)
+  - WRITE RATE (写入速度)
+  - TEMP (温度)
 
 - NETWORK
-  - TOTAL DL
+  - LOAD (网络利用率 %)
   - TOTAL UP
-  - DL RATE
+  - TOTAL DL
   - UP RATE
+  - DL RATE
